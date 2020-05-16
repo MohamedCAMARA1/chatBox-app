@@ -8,6 +8,7 @@ body, .box > *, textarea, input {
 	font-family: 'Roboto', sans-serif;
 	color: #1d1d1d;
 	overflow: hidden;
+	
 }
 
 /* ----------------------------
@@ -23,7 +24,7 @@ body {
 	font-size: 20px;
 }
 .connexionBox {
-	background-color: #eceff1;
+	background-color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,7 +41,7 @@ body {
 	box-sizing: border-box;
 	font-size: 24px;
 	padding: 5px;
-	border: 5px solid #2196F3;
+	border: 5px solid #FF7F50;
 	border-width: 0 0 5px 0;
 	outline: none;
 }
@@ -169,7 +170,7 @@ button {
 	font-size: 20px;
 	border: none;
 	color: white;
-	background-color: #2196F3;
+	background-color: #FF7F50;
 	margin-top: 10px;
 	padding: 10px;
 	cursor: pointer;
