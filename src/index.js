@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import Connexion from './components/Connexion'
-import notFound from './components/notFound'
 import * as serviceWorker from './serviceWorker'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import NotFound from './components/notFound'
+import NotFound from './components/NotFound'
 
 const Root = () => {
     return (
@@ -20,7 +19,7 @@ const Root = () => {
                     
                     path= '/pseudo/:unePage' signifie qu'on ne sait pas ce qui arrive après pseudo
                     */}
-                <Route component = {NotFound} />
+                <Route component = { NotFound} />
                 {/* pas besoin de mettre le path car il exécute ce code 
                 quand le chemin n'est pas trouvé */}
             
