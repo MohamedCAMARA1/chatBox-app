@@ -8,23 +8,28 @@ class Connexion extends Component {
         goToChat: false
     }
 
-haldleChange = event => {
+    haldleChange = event => {
 
-    const pseudo = event.target.value
-    this.setState( {pseudo} )
-}
-handleSubmit = event =>{
+        const pseudo = event.target.value
+        this.setState( {pseudo} )
+    }
+    handleSubmit = event =>{
 
-    event.preventDefault()
-    this.setState( {goToChat : true})
-}
+        event.preventDefault()
+        this.setState( {goToChat : true})
+    }
 
     render() {
 
         if(this.state.goToChat){
-         return <Redirect to= {`/pseudo/${this.state.pseudo}`} />
-         /*ici on utilise une template string pour avoir une chaine de caractère + qqch de dynamique
-         donc à la place dsimples quotes ' ' on utilise ` `
+         return <Redirect push to= {`/pseudo/${this.state.pseudo}`} />
+         /* 
+         -ici on utilise une template string pour avoir une chaine de caractère + qqch de dynamique
+         donc à la place d'un simples quotes ' ' on utilise ` `
+
+         -push permet de garder en mémoire la connexion: c-a-d faire des retours en arrière <-
+            et lorsqu'on revient sur la page avec la flèche -> on retombe sur la même page
+
          */
         }
 
