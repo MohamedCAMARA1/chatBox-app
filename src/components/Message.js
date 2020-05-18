@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-const Message =()=> {
+const Message =( { pseudo, message})=> {
    
         return (
             <p className='user-message'>                
-                le message
+                 {message}
             </p>
         );    
 }
